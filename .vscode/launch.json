@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:TinyFileDialogs}",
+            "name": "Debug TinyFileDialogsDemo",
+            "target": "TinyFileDialogsDemo",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug TinyFileDialogsDemo"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:TinyFileDialogs}",
+            "name": "Release TinyFileDialogsDemo",
+            "target": "TinyFileDialogsDemo",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release TinyFileDialogsDemo"
+        }
+    ]
+}
