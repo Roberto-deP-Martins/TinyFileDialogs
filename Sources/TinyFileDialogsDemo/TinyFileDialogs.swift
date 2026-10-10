@@ -7,13 +7,25 @@ struct TinyFileDialogs {
         let arguments = CommandLine.arguments
         switch arguments[1] {
         case "--open-file":
-            _ = FilePicker.openFile()
+            if let path =  FilePicker.openFile() {
+                print("Selected path: \(path)")
+            } else {
+                print("No file selected.")
+            }
             break
         case "--save-file":
-            _ = FilePicker.saveFile()
+            if let path =  FilePicker.saveFile() {
+                print("Selected path: \(path)")
+            } else {
+                print("No file selected.")
+            }
             break
         case "--select-folder":
-            _ = FilePicker.selectFolder()
+            if let path =  FilePicker.selectFolder() {
+                print("Selected path: \(path)")
+            } else {
+                print("No folder selected.")
+            }
             break
         default:
             print("Usage: \(arguments[0]) [--open-file|--save-file|--select-folder]")
